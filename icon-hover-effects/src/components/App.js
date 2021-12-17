@@ -1,7 +1,7 @@
 import "../scss/App.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHeart } from "@fortawesome/free-regular-svg-icons";
 import {
+  faHeart,
   faGlobe,
   faGlassMartini,
   faGift,
@@ -13,7 +13,7 @@ function App() {
       {[faHeart, faGlassMartini, faGlobe, faGift].map((icon, i) => {
         return (
           <li key={i}>
-            <FontAwesomeIcon icon={icon} />
+            <FontAwesomeIcon icon={icon} className="icon" />
           </li>
         );
       })}
